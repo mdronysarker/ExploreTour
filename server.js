@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
-const app = require('./index');
 
 dotenv.config({ path: './config.env' });
+
+const app = require('./index');
 
 mongoose
   .connect(process.env.DATABASE)
